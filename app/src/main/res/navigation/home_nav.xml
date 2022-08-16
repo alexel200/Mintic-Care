@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/home_nav"
+  app:startDestination="@id/homeFragment">
+
+  <fragment
+    android:id="@+id/homeFragment"
+    android:name="com.mintic.minticcare.ui.fragments.HomeFragment"
+    android:label="@string/home_fragment_label"
+    tools:layout="@layout/fragment_home" >
+    <action
+      android:id="@+id/action_homeFragment_to_specialistFragment"
+      app:destination="@id/specialistFragment"
+      app:launchSingleTop="false" />
+  </fragment>
+  <fragment
+    android:id="@+id/profileFragment"
+    android:name="com.mintic.minticcare.ui.fragments.ProfileFragment"
+    android:label="@string/profile_frgament_label"
+    tools:layout="@layout/fragment_profile" />
+  <fragment
+    android:id="@+id/locationFragment"
+    android:name="com.mintic.minticcare.ui.fragments.LocationFragment"
+    android:label="@string/location_fragment_label"
+    tools:layout="@layout/fragment_location" />
+  <fragment
+    android:id="@+id/specialistFragment"
+    android:name="com.mintic.minticcare.ui.fragments.SpecialistFragment"
+    android:label="@string/specialist_fragment_label"
+    tools:layout="@layout/fragment_specialist" >
+    <argument
+      android:name="name"
+      app:argType="string"
+      app:nullable="true"
+      android:defaultValue="null" />
+    <argument
+      android:name="description"
+      app:argType="string"
+      app:nullable="true"
+      android:defaultValue="null" />
+    <argument
+      android:name="search"
+      app:argType="boolean"
+      android:defaultValue="true" />
+    <action
+      android:id="@+id/action_specialistFragment_to_speciallistDetailFragment"
+      app:destination="@id/speciallistDetailFragment" />
+  </fragment>
+  <fragment
+    android:id="@+id/speciallistDetailFragment"
+    android:name="com.mintic.minticcare.ui.fragments.SpeciallistDetailFragment"
+    android:label="@string/detallesEspecialist"
+    tools:layout="@layout/fragment_speciallist_detail" />
+</navigation>

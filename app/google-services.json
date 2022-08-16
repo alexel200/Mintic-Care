@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "208509629605",
+    "project_id": "minticcare2022",
+    "storage_bucket": "minticcare2022.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:208509629605:android:7e9df33042fe5463df494c",
+        "android_client_info": {
+          "package_name": "com.mintic.minticcare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "208509629605-0mqp2egnjco1sf4pgltvruq79p1qj01f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxM4ezBV1Dbo90ktiqcFogDR69ixvwoFo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "208509629605-0mqp2egnjco1sf4pgltvruq79p1qj01f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

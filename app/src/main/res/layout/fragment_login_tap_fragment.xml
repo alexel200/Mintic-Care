@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.login_tap_fragment">
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/login_username_layout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      android:layout_margin="20dp"
+      app:boxStrokeWidth="0dp"
+      app:boxStrokeWidthFocused="0dp"
+    >
+      <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/login_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/correo_electronico"
+        android:inputType="textEmailAddress"
+
+        />
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/password_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/login_username_layout"
+    android:layout_margin="20dp"
+    app:endIconMode="password_toggle"
+    app:boxStrokeWidth="0dp"
+    app:boxStrokeWidthFocused="0dp"
+    >
+    <com.google.android.material.textfield.TextInputEditText
+      android:id="@+id/password"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:hint="@string/password"
+      android:inputType="textPassword"
+
+      />
+  </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+      android:id="@+id/login_button"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:text="@string/login"
+      android:textSize="16sp"
+      android:textStyle="bold"
+      android:layout_marginHorizontal="@dimen/padding_fields"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/login_forgot_password"
+    />
+
+    <com.google.android.material.button.MaterialButton
+      android:id="@+id/login_forgot_password"
+      style="@style/Widget.MaterialComponents.Button.TextButton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_margin="@dimen/defaultMargin"
+      android:text="@string/forgot_password"
+      app:layout_constraintEnd_toEndOf="parent"
+      android:fontFamily="@font/roboto_bold"
+      app:layout_constraintTop_toBottomOf="@id/password_layout"
+
+      />
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.core.widget.NestedScrollView>

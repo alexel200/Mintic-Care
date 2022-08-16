@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <dimen name="icon_mtop">48dp</dimen>
+  <dimen name="icon_margin">150dp</dimen>
+  <dimen name="defaultMargin">3dp</dimen>
+    <dimen name="padding_fields">20dp</dimen>
+    <dimen name="banner">200dp</dimen>
+</resources>

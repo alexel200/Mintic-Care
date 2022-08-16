@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jem.liquidswipe.layout.LiquidSwipeConstraintLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="#FE619E">
+
+  <com.google.android.material.imageview.ShapeableImageView
+    android:id="@+id/imageView"
+    android:layout_width="168dp"
+    android:layout_height="120dp"
+    app:srcCompat="@drawable/graduated2"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintHorizontal_bias=".3"
+    app:layout_constraintVertical_bias=".3"
+    />
+  <com.google.android.material.textview.MaterialTextView
+    android:id="@+id/title"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Mintic Care 2022"
+    android:fontFamily="@font/roboto_bold"
+    android:textSize="24sp"
+    android:layout_marginTop="25dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="@id/imageView"
+    app:layout_constraintBottom_toTopOf="@id/imageView"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintHorizontal_bias="0"
+    app:layout_constraintVertical_bias="0"
+    android:layout_marginLeft="5dp"
+    android:textColor="@color/black"
+    />
+  <com.google.android.material.textview.MaterialTextView
+    android:id="@+id/on_board_skip"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Skip"
+    android:textStyle="bold"
+    app:layout_constraintTop_toTopOf="@id/title"
+    app:layout_constraintBottom_toBottomOf="@id/title"
+    app:layout_constraintStart_toEndOf="@id/title"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:textSize="16dp"
+    android:textColor="@color/black"
+    app:layout_constraintHorizontal_bias="1"
+    android:layout_marginRight="30dp"
+    />
+
+  <com.google.android.material.textview.MaterialTextView
+    android:id="@+id/title2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Grupo 4B"
+    android:textStyle="bold"
+    android:textColor="@color/black"
+    app:layout_constraintHorizontal_bias="0"
+    app:layout_constraintVertical_bias="0"
+    app:layout_constraintTop_toBottomOf="@id/imageView"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="@id/imageView"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:textSize="42sp"
+    />
+  <com.google.android.material.textview.MaterialTextView
+    android:id="@+id/explanation"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:text="Iniciando agosto del 2022, el viaje finaliza con la aplicación Mintic Care 2022."
+    app:layout_constraintHorizontal_bias="0"
+    app:layout_constraintVertical_bias="0"
+    app:layout_constraintTop_toBottomOf="@id/title2"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="@id/title2"
+    app:layout_constraintEnd_toEndOf="@id/title2"
+    android:textSize="16sp"
+    android:textStyle="bold"
+
+
+    />
+
+  <com.google.android.material.textview.MaterialTextView
+    android:id="@+id/explanation2"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:text="Creado por el grupo 4 y conformado por Jhon Alexander Rueda Sánchez"
+    app:layout_constraintHorizontal_bias="0"
+    app:layout_constraintVertical_bias="0"
+    app:layout_constraintTop_toBottomOf="@id/explanation"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="@id/explanation"
+    app:layout_constraintEnd_toEndOf="@id/explanation"
+    android:textSize="16sp"
+    android:textStyle="bold"
+    />
+
+  <com.google.android.material.imageview.ShapeableImageView
+    android:layout_width="50dp"
+    android:layout_height="10dp"
+    app:srcCompat="@drawable/tab2"
+    app:layout_constraintStart_toStartOf="@id/explanation2"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toStartOf="@id/explanation2"
+    app:layout_constraintTop_toBottomOf="@id/explanation2"
+    app:layout_constraintVertical_bias=".9"
+    />
+
+</com.jem.liquidswipe.layout.LiquidSwipeConstraintLayout>

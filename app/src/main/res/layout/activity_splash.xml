@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      tools:context=".ui.activities.Splash"
+      android:background="@drawable/splash3"
+      android:elevation="2dp"
+      android:fillViewport="true"
+    >
+
+    <com.google.android.material.imageview.ShapeableImageView
+      android:id="@+id/splashLogo"
+      android:layout_width="100dp"
+      android:layout_height="100dp"
+      app:shapeAppearanceOverlay="@style/circleImageView"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:srcCompat="@drawable/logo"
+      android:elevation="2dp"
+      android:layout_marginTop="@dimen/icon_mtop"
+      >
+    </com.google.android.material.imageview.ShapeableImageView>
+
+    <com.google.android.material.textview.MaterialTextView
+      android:id="@+id/welcomeText"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:layout_constraintTop_toBottomOf="@+id/splashLogo"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      android:textSize="32sp"
+      android:textColor="@color/white"
+      android:layout_marginTop="@dimen/defaultMargin"
+      android:text="@string/welcome"
+      android:elevation="2dp"
+      >
+
+    </com.google.android.material.textview.MaterialTextView>
+
+    <com.google.android.material.textview.MaterialTextView
+      android:id="@+id/splashMinticCare"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:layout_constraintTop_toBottomOf="@+id/welcomeText"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      android:textSize="42sp"
+      android:textColor="@color/white"
+      android:text="@string/mintic_care"
+      android:elevation="2dp">
+
+    </com.google.android.material.textview.MaterialTextView>
+
+    <com.airbnb.lottie.LottieAnimationView
+      android:id="@+id/splashAnimation"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintBottom_toBottomOf="parent"
+      android:layout_margin="50dp"
+      app:lottie_rawRes="@raw/health"
+      android:elevation="2dp"/>
+
+  <com.jem.liquidswipe.LiquidSwipeViewPager
+    android:id="@+id/liquidPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
+
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+

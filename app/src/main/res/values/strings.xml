@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Mintic Care</string>
+    <string name="mintic_care">Mintic Care</string>
+    <string name="welcome">Bienvenid@</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="correo_electronico">Correo Electronico</string>
+    <string name="password">password</string>
+    <string name="forgot_password">forgot password?</string>
+    <string name="login">Login</string>
+    <string name="write_email">escriba su email</string>
+    <string name="forgot_password_title">¿Olvidó su contraseña?</string>
+    <string name="helper_forgot_password_text">Si el correo ingresado es correcto, recibirá un correo electrónico para recuperar la contraseña</string>
+    <string name="recovery_password_button">Recuperar contraseña</string>
+    <string name="comback_to_login_button">Regresar a Login</string>
+    <string name="home_fragment_label">Home</string>
+    <string name="profile_frgament_label">Perfil</string>
+    <string name="location_fragment_label">Ubicación</string>
+    <string name="specialist_fragment_label">Especialistas</string>
+    <string name="home_fragment_title">Mintic HealthCare</string>
+    <string name="home_fragment_subtitle">Seleccione el servicio y con gusto le ayudaremos</string>
+    <string name="nuestros_servicios">Nuestros Servicios</string>
+    <string name="specialist_title">Nuestros Especialistas</string>
+    <string name="specialist_fragment_subtitle">Agende una cita con una especialidad de su preferencia</string>
+    <string name="specialist_label">Especialistas</string>
+    <string name="search">Buscar...</string>
+    <string name="logout">Cerrar Sesión</string>
+    <string name="detallesEspecialist">Detalle de Especialista</string>
+</resources>
